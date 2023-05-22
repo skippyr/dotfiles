@@ -29,6 +29,7 @@ require("packer").startup(function(use)
 	use "hrsh7th/cmp-nvim-lsp"
 	use "windwp/nvim-autopairs"
 	use "tpope/vim-surround"
+	use "tpope/vim-commentary"
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -11,5 +11,6 @@ vim.opt.expandtab = false
 vim.opt.list = true
 vim.opt.laststatus = 1
 vim.opt.listchars = hidden_characters
+vim.opt.guicursor = ""
 vim.cmd("colorscheme flamerial")
 

@@ -29,14 +29,14 @@ require("mason-lspconfig").setup({ ensure_installed = servers })
 local cmp = require("cmp")
 cmp.setup({
 	sources = {
-		{ name = 'nvim_lsp' }
+		{ name = "nvim_lsp" }
 	},
 	mapping = cmp.mapping.preset.insert({
-		['<C-b>'] = cmp.mapping.scroll_docs(-4),
-		['<C-f>'] = cmp.mapping.scroll_docs(4),
-		['<C-Space>'] = cmp.mapping.complete(),
-		['<C-e>'] = cmp.mapping.abort(),
-		['<CR>'] = cmp.mapping.confirm({ select = true })
+		["<C-b>"] = cmp.mapping.scroll_docs(-4),
+		["<C-f>"] = cmp.mapping.scroll_docs(4),
+		["<C-Space>"] = cmp.mapping.complete(),
+		["<C-e>"] = cmp.mapping.abort(),
+		["<CR>"] = cmp.mapping.confirm({ select = true })
 	})
 })
 local lsp_config = require("lspconfig")
