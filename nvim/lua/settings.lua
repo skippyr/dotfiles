@@ -12,6 +12,6 @@ vim.opt.laststatus = 1
 vim.opt.list = true
 vim.opt.listchars = hidden_characters
 vim.opt.guicursor = ""
-vim.cmd("filetype plugin off")
+vim.cmd("filetype plugin indent off")
 vim.cmd("colorscheme flamerial")
 

@@ -30,6 +30,7 @@ require("packer").startup(function(use)
 	use "windwp/nvim-autopairs"
 	use "tpope/vim-surround"
 	use "tpope/vim-commentary"
+	use "vim-airline/vim-airline"
 	if packer_bootstrap then
 		require("packer").sync()
 	end

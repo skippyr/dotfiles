@@ -47,4 +47,5 @@ in pairs(servers) do
 	lsp_config[server].setup(server_settings)
 end
 require("nvim-autopairs").setup({})
+vim.g.airline_powerline_fonts = 1
 
