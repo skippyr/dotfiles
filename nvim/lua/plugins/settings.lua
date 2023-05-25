@@ -29,7 +29,8 @@ require("mason-lspconfig").setup({ ensure_installed = servers })
 local cmp = require("cmp")
 cmp.setup({
 	sources = {
-		{ name = "nvim_lsp" }
+		{ name = 'buffer' },
+		{ name = 'nvim_lsp' }
 	},
 	mapping = cmp.mapping.preset.insert({
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),

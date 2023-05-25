@@ -27,6 +27,7 @@ require("packer").startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
+	use "hrsh7th/cmp-buffer"
 	use "windwp/nvim-autopairs"
 	use "tpope/vim-surround"
 	use "tpope/vim-commentary"
