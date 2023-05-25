@@ -2,7 +2,8 @@ local servers = {
 	"tsserver",
 	"html",
 	"cssls",
-	"rust_analyzer"
+	"rust_analyzer",
+	"lua_ls"
 }
 local server_settings = {
 	on_attach = function()
