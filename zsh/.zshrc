@@ -33,7 +33,7 @@ function java::create_jar
 	javac -cp "${src_directory_path}" -d "${out_directory_path}" "${main_class_file_path}"
 	mkdir -p "$(dirname "${jar_file_path}")"
 	jar -cfe "${jar_file_path}" "$(paths::get_extension "${main_class_file_path}")" -C "${out_directory_path}" .
-	chmod +x "${jar_file}"
+	chmod +x "${jar_file_path}"
 	rm -rf "${out_directory_path}"
 }
 
