@@ -14,6 +14,7 @@ vim.opt.list = true
 vim.opt.listchars = hidden_characters
 vim.opt.colorcolumn = rulers
 vim.opt.guicursor = ""
+vim.cmd("command GetHighlightGroup  echo synIDattr(synID(line(\".\"), col(\".\"), 1), \"name\")")
 vim.cmd("set noshowmode")
 vim.cmd("filetype plugin indent off")
 vim.cmd("colorscheme flamerial")
