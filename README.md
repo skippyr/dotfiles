@@ -24,6 +24,10 @@ cp -r nvim ~/.config
 			<p>You can view and edit the LSP servers used by editing the table <code>servers</code> in the file at <code>~/.config/nvim/lua/plugins/settings.lua</code>. Any name that you put there must be a valid LSP server from the <a href="https://github.com/williamboman/mason-lspconfig.nvim">mason-lspconfig</a> plugin. A table is available in its page on GitHub, where you can look for support to your favorite programming language. Only languages I use are included as default as you would expect.</p>
 			<p>All the LSP servers will automatically share the same settings, that you can edit by modifiying the table <code>server_settings</code> in the same file.</p>
 			<p>After adding new LSP servers, restart your Neovim session so Mason can download them.</p>
+			<p>If you are a completely begginer, and need more help, I think that this tutorial might help you out:</p>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=lpQMeFph1RE">(typecraft) Make Neovim BETTER than VSCode - LSP tutorial</a></li>
+				</ul>
 	<h2>Issues And Contributions</h2>
 		<p>Learn how to report issues, questions and ideas and how to contribute to this project by reading its <a href="https://skippyr.github.io/materials/pages/contributions_guideline.html">contributions guideline</a>.</p>
 	<h2>License</h2>
