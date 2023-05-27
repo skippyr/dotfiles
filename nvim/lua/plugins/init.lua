@@ -1,5 +1,3 @@
-require("plugins/settings")
-
 local ensure_packer = function()
 	local fn = vim.fn
 	local install_path =
@@ -36,4 +34,5 @@ require("packer").startup(function(use)
 		require("packer").sync()
 	end
 end)
+require("plugins/settings")
 

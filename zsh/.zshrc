@@ -1,5 +1,5 @@
 export ZSH_THEMES_DIRECTORY_PATH="${HOME}/.config/zsh/themes"
-export EXTRA_SOFTWARES_DIRECTORY_PATH="${HOME}/.local/share/bin"
+export RIVER_DREAMS_USE_FALLBACK_TEXT="0"
 
 function zsh::source_theme
 { source "${ZSH_THEMES_DIRECTORY_PATH}/${1}/${1}.zsh-theme" }
@@ -62,9 +62,6 @@ function docker::remove_all_containers
 
 environment_variables::add_directory_path_to_path "${HOME}/.cargo"
 environment_variables::add_directory_path_to_path "${HOME}/.local/bin"
-for software_directory in $(ls "${EXTRA_SOFTWARES_DIRECTORY_PATH}"); do
-	environment_variables::add_directory_path_to_path "${EXTRA_SOFTWARES_DIRECTORY_PATH}/${software_directory}/bin"
-done
 
 alias l="reveal"
 alias dl="docker ps -a"
