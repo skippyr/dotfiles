@@ -1,5 +1,6 @@
 <h1>Dotfiles</h1>
-	<p>My dotfiles for various applications.</p>
+	<h2>Starting Point</h2>
+		<p>My dotfiles for various applications.</p>
 	<h2>Installation And Usage</h2>
 		<h3>Neovim</h3>
 			<p>Skip some annoying steps when building your Neovim configuration with LSP servers by using my configuration files as a base to yours.</p>
@@ -23,4 +24,9 @@ cp -r nvim ~/.config
 			<p>You can view and edit the LSP servers used by editing the table <code>servers</code> in the file at <code>~/.config/nvim/lua/plugins/settings.lua</code>. Any name that you put there must be a valid LSP server from the <a href="https://github.com/williamboman/mason-lspconfig.nvim">mason-lspconfig</a> plugin. A table is available in its page on GitHub, where you can look for support to your favorite programming language. Only languages I use are included as default as you would expect.</p>
 			<p>All the LSP servers will automatically share the same settings, that you can edit by modifiying the table <code>server_settings</code> in the same file.</p>
 			<p>After adding new LSP servers, restart your Neovim session so Mason can download them.</p>
+	<h2>Issues And Contributions</h2>
+		<p>Learn how to report issues, questions and ideas and how to contribute to this project by reading its <a href="https://skippyr.github.io/materials/pages/contributions_guideline.html">contributions guideline</a>.</p>
+	<h2>License</h2>
+		<p>Dotfiles is released under the MIT License. You can refer to the license as the file <code><a href="https://github.com/skippyr/dotfiles/blob/main/LICENSE">LICENSE</a></code> in the root directory of this repository.</p>
+		<p>Copyright (c) 2023, Sherman Rofeman. MIT License.</p>
 
