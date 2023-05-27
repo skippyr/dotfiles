@@ -2,6 +2,19 @@
 	<h2>Starting Point</h2>
 		<p>My dotfiles for various applications.</p>
 	<h2>Installation And Usage</h2>
+		<h3>Kitty</h3>
+			<p>Make Kitty have a bit different look than its default one.</p>
+			<ul>
+				<li>Copy the <code>kitty</code> from this repository to <code>~/.config/kitty</code>.</li>
+					<p>Assuming that you are on the root directory of the repository:</p>
+					<pre><code>
+mkdir -p ~/.config
+cp -r kitty ~/.config
+					</code></pre>
+				<li>Optionally, install the <a href="https://github.com/skippyr/flamerial">Flamerial</a> theme and <a href="https://github.com/ryanoasis/nerd-fonts/releases">Iosevka Nerd Font</a> font.</li>
+					<p>Those are the default theme and font used in the configuration, you can install them or configure others that you might like in the <code>~/.config/kitty/kitty.conf</code> file.</p>
+					<p>You can find more information about how to configure Kitty in its <a href="https://sw.kovidgoyal.net/kitty/conf/">official website</a>.</p>
+			</ul>
 		<h3>Neovim</h3>
 			<p>Skip some annoying steps when building your Neovim configuration with LSP servers by using my configuration files as a base to yours.</p>
 			<p>Let's get through the steps to, at least, make it run.</p>
