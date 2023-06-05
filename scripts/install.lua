@@ -32,9 +32,7 @@ InstallPackages({
 	"xorg",
 	"zsh",
 })
+InstallSnap()
 ChangeShell("zsh")
-ActivateServices({
-	"NetworkManager",
-	"docker"
-})
+ActivateServices({"NetworkManager", "docker"})
 
