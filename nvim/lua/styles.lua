@@ -13,3 +13,7 @@ function SetHiddenCharacters(hidden_characters)
 	vim.opt.list = true
 	vim.opt.listchars = hidden_characters
 end
+
+function SetCursor(cursor)
+	vim.opt.guicursor = cursor == "terminal" and "" or cursor
+end

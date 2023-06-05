@@ -1,8 +1,10 @@
 require("styles")
+require("plugins")
 
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
 local colorscheme = "flamerial"
+local cursor = "terminal"
 local hidden_characters = {
 	space = "·",
 	tab = "¦ "
@@ -40,6 +42,8 @@ local lsp_servers = {
 	"lua_ls"
 }
 
+InstallPlugins(plugins)
 SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
+SetCursor(cursor)
 SetColorscheme(colorscheme)
 SetHiddenCharacters(hidden_characters)
