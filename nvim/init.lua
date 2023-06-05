@@ -18,7 +18,12 @@ local plugins = {
 	"tpope/vim-surround",
 	"tpope/vim-commentary",
 	"skippyr/flamerial.nvim",
-	"vim-airline/vim-airline",
+	{
+		"vim-airline/vim-airline",
+		config = function()
+			vim.cmd("set noshowmode")
+		end
+	},
 	{
 		"windwp/nvim-autopairs",
 		config = function()
