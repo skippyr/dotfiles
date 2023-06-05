@@ -1,4 +1,7 @@
 /nvim/plugin
 /nvim/colors
 /nvim/autoload
+/kitty/themes
+/kitty/kitty.conf.bak
+/kitty/current-theme.conf
 

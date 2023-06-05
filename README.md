@@ -2,11 +2,25 @@
 	<h2>Starting Point</h2>
 		<p>These are my dotfiles. You can use them to setup some applications or systems faster or use it as a base for yours too.</p>
 	<h2>Installation And Usage</h2>
+		<h3>Kitty</h3>
+			<p>Apply some changes to the default look of the Kitty terminal emulator by following these steps:</p>
+				<ul>
+					<li>Install the Iosevka font (stylistic set <code>ss08</code>).</li>
+						<p>You can download it from its <a href="https://github.com/be5invis/Iosevka">releases page on GitHub</a>.</p>
+					<li>Install the Flamerial theme for Kitty.</li>
+						<p>You can download it by following the instructions in its <a href="https://github.com/skippyr/flamerial">main repository</a>.</p>
+					<li>Copy the directory <code>kitty</code> of this repository to <code>~/.config/kitty</code>.</li>
+						<pre><code>
+mkdir -p ~/.config
+cp -r kitty ~/.config/kitty
+						</code></pre>
+					<li>Reopen Kitty.</li>
+				</ul>
 		<h3>Neovim</h3>
 			<p>By using my dotfiles, you can easily configure Neovim with LSP servers by following these steps:</p>
 			<ul>
 				<li>Install the latest version of Neovim.</li>
-					<p>Most Linux distributions have it, but most also have it out-of-date. Anyway, you can always install the latest binary of Neovim for your system by looking into its <a href="https://github.com/neovim/neovim">available releases on GitHub</a>.</p>
+					<p>Most Linux distributions have it, but most also have it out-of-date. Anyway, you can always install the latest binary of Neovim for your system by looking into its <a href="https://github.com/neovim/neovim/releases">available releases on GitHub</a>.</p>
 				<li>Install all the dependencies required for the plugins to work:</li>
 					<ul>
 						<li>git</li>
