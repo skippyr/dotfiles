@@ -15,11 +15,16 @@ local rulers = {80}
 local plugins = {
 	-- Format to be used to require plugins can be found at:
 	-- https://github.com/wbthomason/packer.nvim
-	"windwp/nvim-autopairs",
 	"tpope/vim-surround",
 	"tpope/vim-commentary",
 	"skippyr/flamerial.nvim",
 	"vim-airline/vim-airline",
+	{
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup()
+		end
+	},
 	{
 		"iamcco/markdown-preview.nvim",
 		run = function()
