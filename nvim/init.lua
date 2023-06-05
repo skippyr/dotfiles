@@ -1,11 +1,11 @@
-require("./libraries/spacing")
+require("styles")
 
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
 local colorscheme = "flamerial"
 local hidden_characters = {
-	["space"] = "·",
-	["tab"] = "¦ "
+	space = "·",
+	tab = "¦ "
 }
 local rulers = {80}
 local plugins = {
@@ -41,3 +41,5 @@ local lsp_servers = {
 }
 
 SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
+SetColorscheme(colorscheme)
+SetHiddenCharacters(hidden_characters)
