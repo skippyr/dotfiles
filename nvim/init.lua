@@ -1,6 +1,7 @@
 require("styles")
 require("plugins")
 require("lsp")
+require("tables")
 
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
@@ -14,13 +15,6 @@ local rulers = {80}
 local plugins = {
 	-- Format to be used to require plugins can be found at:
 	-- https://github.com/wbthomason/packer.nvim
-	"wbthomason/packer.nvim",
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
-	"hrsh7th/nvim-cmp",
-	"hrsh7th/cmp-nvim-lsp",
-	"hrsh7th/cmp-buffer",
 	"windwp/nvim-autopairs",
 	"tpope/vim-surround",
 	"tpope/vim-commentary",

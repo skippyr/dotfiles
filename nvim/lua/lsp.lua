@@ -1,3 +1,5 @@
+local cmp = require("cmp")
+local lsp_config = require("lspconfig")
 local cmp_settings = {
 	sources = {
 		{name = "buffer"},
@@ -25,8 +27,6 @@ local lsp_server_settings = {
 }
 
 function SetupLspServers(lsp_servers)
-	local cmp = require("cmp")
-	local lsp_config = require("lspconfig")
 	require("mason").setup()
 	require("mason-lspconfig").setup({ensure_installed = lsp_servers})
 	cmp.setup(cmp_settings)

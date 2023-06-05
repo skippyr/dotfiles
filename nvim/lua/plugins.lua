@@ -23,8 +23,17 @@ end
 function SetupPlugins(plugins)
 	install_plugin_manager()
 	local packer = require("packer")
+	local lsp_plugins = {
+		"wbthomason/packer.nvim",
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+		"hrsh7th/nvim-cmp",
+		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-buffer"
+	}
 	packer.startup(function(require_plugin)
-		for _, plugin in pairs(plugins) do
+		for _, plugin in pairs(ConcatenateTables(plugins, lsp_plugins)) do
 			require_plugin(plugin)
 		end
 	end)
