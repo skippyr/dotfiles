@@ -1,3 +1,5 @@
+export RIVER_DREAMS_USE_FALLBACK_TEXT=0
+
 function add_to_path() {
 	typeset -r directory_path="$1"
 	if [[ -d "${directory_path}" ]]; then
