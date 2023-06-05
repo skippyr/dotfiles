@@ -6,8 +6,20 @@ function SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
 	vim.cmd("filetype plugin indent off")
 end
 
-function SetColorscheme(colorscheme)
-	vim.cmd("colorscheme " .. colorscheme)
+function SetTabs(always_show_tabs)
+	vim.opt.showtabline = always_show_tabs and 2 or 0
+end
+
+function SetLineNumbers(show_line_numbers)
+	if not show_line_numbers then
+		return
+	end
+	vim.opt.number = true
+	vim.opt.relativenumber = true
+end
+
+function SetColorScheme(color_scheme)
+	vim.cmd("colorscheme " .. color_scheme)
 end
 
 function SetHiddenCharacters(hidden_characters)
@@ -15,6 +27,8 @@ function SetHiddenCharacters(hidden_characters)
 	vim.opt.listchars = hidden_characters
 end
 
-function SetCursor(cursor)
-	vim.opt.guicursor = cursor == "terminal" and "" or cursor
+function SetCursor(use_terminal_cursor)
+	if use_terminal_cursor then
+		vim.opt.guicursor = ""
+	end
 end

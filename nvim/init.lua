@@ -5,8 +5,10 @@ require("tables")
 
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
-local colorscheme = "flamerial"
-local cursor = "terminal"
+local show_line_numbers = true
+local always_show_tabs = true
+local color_scheme = "flamerial"
+local use_terminal_cursor = true
 local hidden_characters = {
 	space = "·",
 	tab = "¦ "
@@ -49,7 +51,9 @@ local lsp_servers = {
 
 SetupPlugins(plugins)
 SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
-SetCursor(cursor)
-SetColorscheme(colorscheme)
+SetTabs(always_show_tabs)
+SetLineNumbers(show_line_numbers)
+SetCursor(use_terminal_cursor)
+SetColorScheme(color_scheme)
 SetHiddenCharacters(hidden_characters)
 SetupLspServers(lsp_servers)
