@@ -5,10 +5,10 @@
 		<h3>ZSH</h3>
 			<p>Add some basic settings to ZSH by following these steps:</p>
 				<ul>
-					<li>Install River Dreams.</li>
-						<p>You can download it from its <a href="https://github.com/skippyr/river_dreams">page</a> on GitHub.</p>
+					<li>Install git.</li>
 					<li>Copy the file <code>zsh/.zshrc</code> to <code>~</code>.</li>
 						<pre><code>cp zsh/.zshrc ~</code></pre>
+					<li>Reopen ZSH.</li>
 				</ul>
 		<h3>Kitty</h3>
 			<p>Apply some changes to the default look of the Kitty terminal emulator by following these steps:</p>
