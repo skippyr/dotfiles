@@ -1,4 +1,17 @@
-local settings = {
+local cmp_settings = {
+	sources = {
+		{name = "buffer"},
+		{name = "nvim_lsp"}
+	},
+	mapping = cmp.mapping.preset.insert({
+		["<C-b>"] = cmp.mapping.scroll_docs(-4),
+		["<C-f>"] = cmp.mapping.scroll_docs(4),
+		["<C-Space>"] = cmp.mapping.complete(),
+		["<C-e>"] = cmp.mapping.abort(),
+		["<CR>"] = cmp.mapping.confirm({select = true})
+	})
+}
+local lsp_server_settings = {
 	on_attach = function()
 		local keymaps = {
 			["K"] = vim.lsp.buf.hover,
@@ -16,21 +29,9 @@ function SetupLspServers(lsp_servers)
 	local lsp_config = require("lspconfig")
 	require("mason").setup()
 	require("mason-lspconfig").setup({ensure_installed = lsp_servers})
-	cmp.setup({
-		sources = {
-			{ name = "buffer" },
-			{ name = "nvim_lsp" }
-		},
-		mapping = cmp.mapping.preset.insert({
-			["<C-b>"] = cmp.mapping.scroll_docs(-4),
-			["<C-f>"] = cmp.mapping.scroll_docs(4),
-			["<C-Space>"] = cmp.mapping.complete(),
-			["<C-e>"] = cmp.mapping.abort(),
-			["<CR>"] = cmp.mapping.confirm({select = true})
-		})
-	})
+	cmp.setup(cmp_settings)
 	for _, lsp_server in pairs(lsp_servers) do
-		lsp_config[lsp_server].setup(settings)
+		lsp_config[lsp_server].setup(lsp_server_settings)
 	end
 end
 
