@@ -2,11 +2,19 @@
 	<h2>Starting Point</h2>
 		<p>These are my dotfiles. You can use them to setup some applications or systems faster or use it as a base for yours too.</p>
 	<h2>Installation And Usage</h2>
+		<h3>ZSH</h3>
+			<p>Add some basic settings to ZSH by following these steps:</p>
+				<ul>
+					<li>Install River Dreams.</li>
+						<p>You can download it from its <a href="https://github.com/skippyr/river_dreams">page</a> on GitHub.</p>
+					<li>Copy the file <code>zsh/.zshrc</code> to <code>~</code>.</li>
+						<pre><code>cp zsh/.zshrc ~</code></pre>
+				</ul>
 		<h3>Kitty</h3>
 			<p>Apply some changes to the default look of the Kitty terminal emulator by following these steps:</p>
 				<ul>
 					<li>Install the Iosevka font (stylistic set <code>ss08</code>).</li>
-						<p>You can download it from its <a href="https://github.com/be5invis/Iosevka">releases page on GitHub</a>.</p>
+						<p>You can download it from its <a href="https://github.com/be5invis/Iosevka/releases">releases page on GitHub</a>.</p>
 					<li>Install the Flamerial theme for Kitty.</li>
 						<p>You can download it by following the instructions in its <a href="https://github.com/skippyr/flamerial">main repository</a>.</p>
 					<li>Copy the directory <code>kitty</code> of this repository to <code>~/.config/kitty</code>.</li>
