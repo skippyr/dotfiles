@@ -1,3 +1,5 @@
+require("./libraries/spacing")
+
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
 local colorscheme = "flamerial"
@@ -7,6 +9,8 @@ local hidden_characters = {
 }
 local rulers = {80}
 local plugins = {
+	-- Format to be used to require plugins can be found at:
+	-- https://github.com/wbthomason/packer.nvim
 	"wbthomason/packer.nvim",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
@@ -36,3 +40,4 @@ local lsp_servers = {
 	"lua_ls"
 }
 
+SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
