@@ -1,5 +1,6 @@
 require("styles")
 require("plugins")
+require("lsp")
 
 local tab_size = 4
 local use_spaces_instead_of_tabs = false
@@ -42,8 +43,9 @@ local lsp_servers = {
 	"lua_ls"
 }
 
-InstallPlugins(plugins)
+SetupPlugins(plugins)
 SetSpacing(tab_size, use_spaces_instead_of_tabs, rulers)
 SetCursor(cursor)
 SetColorscheme(colorscheme)
 SetHiddenCharacters(hidden_characters)
+SetupLspServers(lsp_servers)
