@@ -2,6 +2,14 @@
 	<h2>Starting Point</h2>
 		<p>These are my dotfiles. You can use them to setup some applications or systems faster or use it as a base for yours too.</p>
 	<h2>Installation And Usage</h2>
+		<h3>Arch Linux</h3>
+			<p>Easily configure basic dependencies to run <code>bspwm</code>, Snap, shell and services on top of a machine that is only running the Arch Linux base system by following these steps:</p>
+			<ul>
+				<li>Install Lua.</li>
+					<pre><code>sudo pacman -Syu --noconfirm lua</code></pre>
+				<li>Use the lua interpreter on the <code>scripts/install.lua</code> file.</li>
+					<p>If you want, you can customize it to download other packages, change shell and more.</p>
+			</ul>
 		<h3>ZSH</h3>
 			<p>Add some basic settings to ZSH by following these steps:</p>
 				<ul>
@@ -25,7 +33,7 @@ cp -r kitty ~/.config/kitty
 					<li>Reopen Kitty.</li>
 				</ul>
 		<h3>Neovim</h3>
-			<p>By using my dotfiles, you can easily configure Neovim with LSP servers by following these steps:</p>
+			<p>Easily configure Neovim with LSP servers by following these steps:</p>
 			<ul>
 				<li>Install the latest version of Neovim.</li>
 					<p>Most Linux distributions have it, but most also have it out-of-date. Anyway, you can always install the latest binary of Neovim for your system by looking into its <a href="https://github.com/neovim/neovim/releases">available releases on GitHub</a>.</p>

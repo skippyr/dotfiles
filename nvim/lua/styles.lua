@@ -11,11 +11,10 @@ function SetTabs(always_show_tabs)
 end
 
 function SetLineNumbers(show_line_numbers)
-	if not show_line_numbers then
-		return
+	if show_line_numbers then
+		vim.opt.number = true
+		vim.opt.relativenumber = true
 	end
-	vim.opt.number = true
-	vim.opt.relativenumber = true
 end
 
 function SetColorScheme(color_scheme)

@@ -28,9 +28,11 @@ InstallPackages({
 	"ruby",
 	"rustup",
 	"sxhkd",
+	"ttc-iosevka-ss08",
 	"wireplumber",
 	"xorg",
 	"zsh",
+	"kitty"
 })
 InstallSnap()
 ChangeShell("zsh")
