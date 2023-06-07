@@ -11,7 +11,8 @@ local color_scheme = "flamerial"
 local use_terminal_cursor = true
 local hidden_characters = {
 	space = "·",
-	tab = "¦ "
+	tab = "¦ ",
+	eol = "¬"
 }
 local rulers = {80}
 local plugins = {
