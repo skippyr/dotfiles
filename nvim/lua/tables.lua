@@ -1,4 +1,6 @@
-function ConcatenateTables(first_table, second_table)
+local module = {}
+
+function module.concatenate_tables(first_table, second_table)
 	local master_table = {}
 	for _, value in pairs(first_table) do
 		master_table[#master_table + 1] = value
@@ -9,3 +11,4 @@ function ConcatenateTables(first_table, second_table)
 	return master_table
 end
 
+return module

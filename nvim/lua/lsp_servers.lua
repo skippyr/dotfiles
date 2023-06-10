@@ -1,3 +1,4 @@
+local module = {}
 local cmp = require("cmp")
 local lsp_config = require("lspconfig")
 local cmp_settings = {
@@ -26,7 +27,7 @@ local lsp_server_settings = {
 	end
 }
 
-function SetupLspServers(lsp_servers)
+function module.setup_lsp_servers(lsp_servers)
 	require("mason").setup()
 	require("mason-lspconfig").setup({ensure_installed = lsp_servers})
 	cmp.setup(cmp_settings)
@@ -35,3 +36,4 @@ function SetupLspServers(lsp_servers)
 	end
 end
 
+return module
