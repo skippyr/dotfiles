@@ -23,7 +23,15 @@ mkdir -p ~/.config/kitty
 cp kitty/kitty.conf ~/.config/kitty
 					</code></pre>
 				<li>Restart your Kitty session.</li>
-				<p>If you want, you can either install the same theme or font that are in the <code>~/.config/kitty/kitty.conf</code> file to use them, or you can change it to others that you like.</p>
+				<p>If you want, you can either install the same font that are in the <code>~/.config/kitty/kitty.conf</code> file or you can change it to other that you like.</p>
+			</ul>
+		<h3>Bspwm</h3>
+			<ul>
+				<li>Copy the <code>bspwm/bspwmrc</code> file to <code>~/.config/bspwm</code>.</li>
+					<pre><code>
+mkdir -p ~/.config/bspwm
+cp bspwm/bspwmrc ~/.config/bspwm
+					</code></pre>
 			</ul>
 		<h3>Neovim</h3>
 			<ul>

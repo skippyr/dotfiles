@@ -1,3 +1,8 @@
 export PATH="${PATH}:${HOME}/.local/bin"
-PROMPT="%F{red}[%F{yellow}%n%F{red}@%F{green}%m%f:%F{magenta}%~%F{red}]%f$ "
-
+setopt promptsubst
+function _skgeek::branch() {
+	typeset -r branch=$(git branch --show-current 2>/dev/null)
+	[[ -n "${branch}" ]] && echo " on %F{cyan}${branch}%f"
+}
+PROMPT='%F{yellow}%m%f in %F{red}%~%f$(_skgeek::branch)
+%# '

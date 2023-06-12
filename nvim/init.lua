@@ -1,7 +1,7 @@
 local settings = require("settings")
 
 settings.apply({
-	indentation_size = 4,
+	indentation_size = 3,
 	indent_using_spaces = false,
 	color_scheme = "flamerial",
 	hidden_characters = {
@@ -42,7 +42,8 @@ settings.apply({
 		"html",
 		"cssls",
 		"rust_analyzer",
-		"lua_ls"
+		"lua_ls",
+		"gopls"
 	}
 })
 
