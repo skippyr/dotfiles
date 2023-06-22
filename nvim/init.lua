@@ -11,7 +11,9 @@ settings.apply({
     "tpope/vim-surround",
     "tpope/vim-commentary",
     "tpope/vim-sleuth",
+    "mhinz/vim-signify",
     "skippyr/flamerial.nvim",
+    "ryanoasis/vim-devicons",
     {
       "lukas-reineke/indent-blankline.nvim",
       config = function()
@@ -23,6 +25,7 @@ settings.apply({
       "vim-airline/vim-airline",
       config = function()
         vim.cmd("set noshowmode")
+        vim.g.airline_powerline_fonts = 1
       end
     },
     {
