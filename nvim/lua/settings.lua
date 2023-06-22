@@ -7,7 +7,6 @@ function module.apply(settings)
   vim.opt.shiftwidth = settings.indentation_size
   vim.opt.expandtab = settings.indent_using_spaces
   vim.opt.colorcolumn = settings.rulers
-  vim.opt.showtabline = 2
   vim.opt.number = true
   vim.opt.relativenumber = true
   vim.cmd("colorscheme " .. settings.color_scheme)

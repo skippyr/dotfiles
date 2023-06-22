@@ -22,10 +22,19 @@ settings.apply({
       end
     },
     {
+      "akinsho/bufferline.nvim",
+      tag = "*",
+      requires = 'nvim-tree/nvim-web-devicons',
+      config = function()
+        require("bufferline").setup()
+      end
+    },
+    {
       "vim-airline/vim-airline",
       config = function()
         vim.cmd("set noshowmode")
-        vim.g.airline_powerline_fonts = 1
+        vim.g.airline_left_sep = ""
+        vim.g.airline_right_sep = ""
       end
     },
     {
@@ -49,7 +58,8 @@ settings.apply({
     "cssls",
     "rust_analyzer",
     "lua_ls",
-    "gopls"
+    "gopls",
+    "clangd"
   }
 })
 
