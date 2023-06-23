@@ -2,7 +2,7 @@
 charset = utf-8
 trim_trailing_whitespace = true
 
-[*.lua]
+[{*.lua,bspwmrc,.zshrc}]
 indent_style = space
 indent_size = 2
 
