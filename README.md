@@ -13,7 +13,21 @@ My configuration files for Neovim set it up with a series of settings, plugins,
 LSP servers and support for EditorConfig out of the box. To install it, follow
 these steps:
 
+* Install the latest version of Neovim and the following dependencies required
+  by the plugins:
+    * git
+    * nodejs
+    * npm
+    * curl
+    * unzip
+
 * Copy the directory `nvim` to `~/.config/nvim`.
+
+```bash
+mkdir -p ~/.config/nvim &&
+cp -r nvim ~/.config/nvim
+```
+
 * Open Neovim. It is normal to receive an error in the first run, as the plugins
   will not be installed yet. You can skip them using `Enter`.
 * Use the `:PackerSync` command to download the plugins and wait until all the
@@ -40,6 +54,28 @@ Some settings for specific file types can be configured under
 `~/.config/nvim/ftplugin`. Those files contains the indentation settings for
 those file types, so you do not need to configure them manually every time you
 edit one of them.
+
+### Kitty
+
+* Copy the file `kitty/kitty.conf` to `~/.config/kitty`.
+
+```bash
+mkdir -p ~/.config/kitty &&
+cp kitty/kitty.conf ~/.config/kitty
+```
+
+* Reopen Kitty.
+
+You may need to install the theme and font that are documented inside that
+file if you want to change the style.
+
+### ZSH
+
+* Copy the file `zsh/.zshrc` to `~`.
+
+```bash
+cp zsh/.zshrc ~
+```
 
 ## Issues And Contributions
 
