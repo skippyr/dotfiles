@@ -1,7 +1,6 @@
 -- A module that contains operations to setup up plugins.
 
 local module = {}
-local tables = require("tables")
 
 -- This file contains a refactored version of the default instructions given
 -- to setup the packer.nvim plugin, that can be found here:
@@ -53,7 +52,7 @@ function module.setup_plugins(plugins)
   -- Adds all plugins to be tracked by the packer.nvim plugin.
   -- By using the `:PackerSync` command, they will be downloaded.
   require("packer").startup(function(add_plugin)
-    for _, plugin in pairs(tables.concatenate_tables(plugins, lsp_plugins)) do
+    for _, plugin in pairs(require("tables").concatenate_tables(plugins, lsp_plugins)) do
       add_plugin(plugin)
     end
   end)
