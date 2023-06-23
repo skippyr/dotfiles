@@ -1,4 +1,4 @@
-" Adjust the indentation when editing Javascript files.
+" Adjust the indentation when editing Javascript and JSX (React) files.
 
 set expandtab
 set tabstop=2

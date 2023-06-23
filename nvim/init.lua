@@ -4,12 +4,12 @@ settings.apply({
   -- Adjust the indentation size when the tab key is pressed. It will also
   -- affect "shifting", when the right angle bracket key (>) is pressed twice.
   --
-  -- It may be overwritten when editing some file types.
+  -- It may be overwritten when editing some file types or by EditorConfig.
   indentation_size = 4,
   -- Defines if the indentation will use spaces. If set to `false`, it will
   -- use tabs.
   --
-  -- It may be overwritten when editing some file types.
+  -- It may be overwritten when editing some file types or by EditorConfig.
   indent_using_spaces = true,
   -- Defines the color scheme to be used.
   color_scheme = "flamerial",
