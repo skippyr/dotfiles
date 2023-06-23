@@ -33,8 +33,7 @@ settings.apply({
       "vim-airline/vim-airline",
       config = function()
         vim.cmd("set noshowmode")
-        vim.g.airline_left_sep = ""
-        vim.g.airline_right_sep = ""
+        vim.g.airline_powerline_fonts = 1
       end
     },
     {

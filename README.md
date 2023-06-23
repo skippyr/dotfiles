@@ -1,56 +1,43 @@
-<h1>Dotfiles</h1>
-	<h2>Starting Point</h2>
-		<p>These are my dotfiles. You can use them to setup some applications faster.</p>
-	<h2>Installation And Usage</h2>
-		<p>Before installing anything, follow these steps:</p>
-			<ul>
-				<li>Clone this repository.</li>
-					<pre><code>git clone --depth=1 https://github.com/skippyr/dotfiles</code></pre>
-				<li>Access the repository's directory.</li>
-					<pre><code>cd dotfiles</code></pre>
-			</ul>
-		<h3>ZSH</h3>
-			<ul>
-				<li>Copy the <code>zsh/.zshrc</code> file to <code>~</code>.</li>
-					<pre><code>cp zsh/.zshrc ~</code></pre>
-				<li>Restart your ZSH session.</li>
-			</ul>
-		<h3>Kitty</h3>
-			<ul>
-				<li>Copy the <code>kitty/kitty.conf</code> file to <code>~/.config/kitty</code>.</li>
-					<pre><code>
-mkdir -p ~/.config/kitty
-cp kitty/kitty.conf ~/.config/kitty
-					</code></pre>
-				<li>Restart your Kitty session.</li>
-				<p>If you want, you can either install the same font that are in the <code>~/.config/kitty/kitty.conf</code> file or you can change it to other that you like.</p>
-			</ul>
-		<h3>Bspwm</h3>
-			<ul>
-				<li>Copy the <code>bspwm/bspwmrc</code> file to <code>~/.config/bspwm</code>.</li>
-					<pre><code>
-mkdir -p ~/.config/bspwm
-cp bspwm/bspwmrc ~/.config/bspwm
-					</code></pre>
-			</ul>
-		<h3>Neovim</h3>
-			<ul>
-				<li>Install the dependencies needed by the plugins:</li>
-					<ul>
-						<li>git</li>
-						<li>nodejs</li>
-						<li>npm</li>
-						<li>curl</li>
-						<li>unzip</li>
-					</ul>
-				<li>Copy the <code>nvim</code> directory to <code>~/.config/nvim</code>.</li>
-				<pre><code>cp -r nvim ~/.config/nvim</code></pre>
-				<li>Open Neovim and run the <code>:PackerSync</code> command to install the plugins and start installing LSP servers. An error pointing that plugins are not installed is normal. Once done, you can start using it.</p>
-				<p>You can customize your settings by modifying the <code>~/.config/nvim/init.lua</code> file. Restart Neovim for your changes to be applied. Run the <code>:PackerSync</code> command again if you have modified the plugins to update them.</p>
-			</ul>
-	<h2>Issues And Contributions</h2>
-		<p>Issues can be reported through the <a href="https://github.com/skippyr/dotfiles/issues">issues tab</a>.</p>
-		<p>Further more, learn how to contribute to this project by reading its <a href="https://skippyr.github.io/materials/pages/contributions_guidelines.html">contributions guidelines</a>.</p>
-	<h2>License</h2>
-		<p>This project is released under terms of the MIT License.</p>
-		<p>Copyright (c) 2023, Sherman Rofeman. MIT License.</p>
+# Dotfiles
+
+## Starting Point
+
+The Dotfiles project contains my dotfiles for some applications. You can use
+them to set them up quickly.
+
+## Installation
+
+### Neovim
+
+My configuration files for Neovim set it up with a series of settings, plugins,
+LSP servers and support for EditorConfig out of the box. To install it, follow
+these steps:
+
+* Copy the directory `nvim` to `~/.config/nvim`.
+* Reopen Neovim.
+
+If you want to configure it, access the file `~/.config/nvim/init.lua` and
+change whatever you need in the available options: you can set up default
+indentation, color scheme, rulers, plugins and LSP servers.
+
+More deeper settings will be hidden under `~/.config/nvim/lua`, such as the
+plugin manager setup and LSP servers configuration, so you do not accidentally
+mess them up, but you can change it if you know how to use them.
+
+Some settings for specific file types can be configured under
+`~/.config/nvim/ftplugin`. Those files contains the identation settings for
+those file types, so you do not need to configure them manually every time you
+enter them.
+
+## Issues And Contributions
+
+Learn how to report issues and contribute to this project by reading its
+[contributions guidelines](https://skippyr.github.io/materials/pages/contributions_guidelines.html).
+
+## License
+
+This project is released under the terms of the MIT license. A copy of the
+license is bundled with the source code.
+
+Copyright (c) 2023, Sherman Rofeman. MIT license.
+
