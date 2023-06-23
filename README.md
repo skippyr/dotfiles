@@ -23,7 +23,7 @@ these steps:
   plugin install all the LSP servers automatically.
 
   While waiting, you can use the `:Mason` command to check out the download
-  status.
+  statuses.
 
 After finished all these operations, Neovim will be ready for you to use.
 
@@ -33,13 +33,13 @@ indentation, color scheme, rulers, plugins and LSP servers.
 
 More deeper settings will be hidden under `~/.config/nvim/lua`, such as the
 plugin manager setup and LSP servers configuration. They are separeted of the
-settings file so you do not accidentally mess them up, but you can change it if
-you know how to use them.
+settings file so you do not accidentally mess them up, but you can change them
+if you know how to use them.
 
 Some settings for specific file types can be configured under
 `~/.config/nvim/ftplugin`. Those files contains the indentation settings for
 those file types, so you do not need to configure them manually every time you
-enter them.
+edit one of them.
 
 ## Issues And Contributions
 
