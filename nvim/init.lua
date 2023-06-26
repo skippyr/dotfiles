@@ -76,6 +76,11 @@ settings.apply({
       run = function()
         vim.fn["mkdp#util#install"]()
       end
+    },
+    {
+      -- A formatter for web files.
+      "prettier/vim-prettier",
+      run = "npm i --omit=dev"
     }
   },
   -- A list of LSP servers to be installed by the LSP server manager.
