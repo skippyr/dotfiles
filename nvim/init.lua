@@ -8,7 +8,7 @@ settings.apply({
   indentation_size = 4,
   -- Defines if the indentation will use spaces. If set to `false`, it will
   -- use tabs.
-  --
+
   -- It may be overwritten when editing some file types or by EditorConfig.
   indent_using_spaces = true,
   -- Defines the color scheme to be used.
@@ -80,7 +80,11 @@ settings.apply({
     {
       -- A formatter for web files.
       "prettier/vim-prettier",
-      run = "npm i --omit=dev"
+      run = "npm i --omit=dev",
+      config = function()
+        vim.cmd("let g:prettier#autoformat = 1")
+        vim.cmd("let g:prettier#autoformat_require_pragma = 0")
+      end
     }
   },
   -- A list of LSP servers to be installed by the LSP server manager.
