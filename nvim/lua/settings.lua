@@ -8,6 +8,7 @@ function module.apply(settings)
     vim.opt.colorcolumn = settings.rulers
     vim.opt.number = true
     vim.opt.relativenumber = true
+    vim.opt.termguicolors = true
     vim.cmd("colorscheme " .. settings.color_scheme)
     require("lsp_servers").setup_lsp_servers(settings.lsp_servers)
 end
