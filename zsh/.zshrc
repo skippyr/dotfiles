@@ -1,5 +1,2 @@
-# You can link binary files `~/.local/bin` to make them accessable in the
-# command line.
 export PATH="${PATH}:${HOME}/.local/bin"
-
-PROMPT='%(?..[%?] )@%m: %~%f%(#.#.$) '
+source ~/.local/share/zsh/themes/club_house/club_house.zsh-theme
