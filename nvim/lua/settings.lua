@@ -10,6 +10,7 @@ function module.apply(settings)
     vim.opt.relativenumber = true
     vim.opt.termguicolors = true
     vim.cmd("colorscheme " .. settings.color_scheme)
+    vim.cmd("filetype plugin indent off")
     require("lsp_servers").setup_lsp_servers(settings.lsp_servers)
 end
 
